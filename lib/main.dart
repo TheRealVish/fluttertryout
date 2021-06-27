@@ -26,21 +26,32 @@ class Home extends StatelessWidget {
       body: Row(
         children: [
           Expanded(
+            flex: 9,
+              child: Image.asset('assets/dog.jpg')
+          ),
+          Expanded(
+            flex: 4,
             child: Container(
               padding: EdgeInsets.all(30),
               color: Colors.cyan,
               child: Text('1'),
             ),
           ),
-          Container(
+          Expanded(
+            flex: 2,
+            child: Container(
             padding: EdgeInsets.all(30),
             color: Colors.pink[200],
             child: Text('2'),
           ),
-          Container(
-            padding: EdgeInsets.all(30),
-            color: Colors.amber,
-            child: Text('3'),
+          ),
+          Expanded(
+            flex: 3,
+            child: Container(
+              padding: EdgeInsets.all(30),
+              color: Colors.amber,
+              child: Text('3'),
+            ),
           )
         ],
       ),
