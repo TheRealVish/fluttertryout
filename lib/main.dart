@@ -22,8 +22,71 @@ class Home extends StatelessWidget {
     body: Padding(
       padding: EdgeInsets.fromLTRB(30, 40, 30, 0),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          Text(
+            'Name',
+            style: TextStyle(
+              color: Colors.grey,
+              letterSpacing: 2,
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Text(
+            'Chun-Li',
+            style: TextStyle(
+              color: Colors.amberAccent[200],
+              letterSpacing: 2,
+              fontSize: 28,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          Text(
+            'Current Ninja Level',
+            style: TextStyle(
+              color: Colors.grey,
+              letterSpacing: 2,
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Text(
+            '8',
+            style: TextStyle(
+              color: Colors.amberAccent[200],
+              letterSpacing: 2,
+              fontSize: 28,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          Row(
+            children: [
+              Icon(
+                Icons.email,
+                color: Colors.grey[400],
+              ),
+              SizedBox(width: 10,),
+              Text(
+                'testing@gmail.com',
+                style: TextStyle(
+                  color: Colors.grey[400],
+                  fontSize: 18,
+                  letterSpacing: 1
+                ),
 
+              ),
+            ],
+
+          ),
         ],
       ),
     )
