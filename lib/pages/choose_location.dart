@@ -12,9 +12,21 @@ class _ChooseLocationState extends State<ChooseLocation> {
 
   int counter = 0;
 
+  void getData(){
+
+
+    // simulate network request
+    Future.delayed(Duration(seconds: 2),(){
+      print('yoshi');
+    });
+
+    print('non blocking');
+  }
+
   @override
   void initState() {
     super.initState();
+    getData();
     print('init function ran just now');
 
   }
