@@ -1,58 +1,61 @@
 import 'package:flutter/material.dart';
-import 'quote.dart';
-import 'quote_card.dart';
+// import 'quote.dart';
+// import 'quote_card.dart';
+import 'package:myapp/pages/home.dart';
 
 void main() =>
   runApp(MaterialApp(
-    home: QuoteList() ,
+    home: Home(),
   ));
 
-class QuoteList extends StatefulWidget {
-  const QuoteList({Key? key}) : super(key: key);
-
-  @override
-  _QuoteListState createState() => _QuoteListState();
-}
-
-class _QuoteListState extends State<QuoteList> {
-
-  List<Quote> quotes = [
-    Quote(author: 'oscar wild', text: 'this is quote' ),
-    Quote(author: 'oscar wild', text: 'second quote' ),
-    Quote(author: 'oscar wild', text: 'third quote' ),
-
-  ];
-
-  //
-  // Widget quoteTemplate(quote){
-  //   return QuoteCard(quote: quote,);
-  // }
 
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.grey[200],
-      appBar: AppBar(
-        title: Text(
-          'Awesome Quotes',
-        ),
-        centerTitle: true,
-        backgroundColor: Colors.redAccent[100],
-      ),
-      body: Column(
-        children: quotes.map((quote) => QuoteCard(
-          quote: quote,
-          delete: (){
-            setState(() {
-              quotes.remove(quote);
-            });
-          }
-        )).toList(),
-      ),
-    );
-  }
-}
+// class QuoteList extends StatefulWidget {
+//   const QuoteList({Key? key}) : super(key: key);
+//
+//   @override
+//   _QuoteListState createState() => _QuoteListState();
+// }
+//
+// class _QuoteListState extends State<QuoteList> {
+//
+//   List<Quote> quotes = [
+//     Quote(author: 'oscar wild', text: 'this is quote' ),
+//     Quote(author: 'oscar wild', text: 'second quote' ),
+//     Quote(author: 'oscar wild', text: 'third quote' ),
+//
+//   ];
+//
+//   //
+//   // Widget quoteTemplate(quote){
+//   //   return QuoteCard(quote: quote,);
+//   // }
+//
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       backgroundColor: Colors.grey[200],
+//       appBar: AppBar(
+//         title: Text(
+//           'Awesome Quotes',
+//         ),
+//         centerTitle: true,
+//         backgroundColor: Colors.redAccent[100],
+//       ),
+//       body: Column(
+//         children: quotes.map((quote) => QuoteCard(
+//           quote: quote,
+//           delete: (){
+//             setState(() {
+//               quotes.remove(quote);
+//             });
+//           }
+//         )).toList(),
+//       ),
+//     );
+//   }
+// }
 
 // class QuoteCard extends StatelessWidget {
 //
