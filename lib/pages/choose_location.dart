@@ -12,25 +12,6 @@ class _ChooseLocationState extends State<ChooseLocation> {
 
   int counter = 0;
 
-  void getData(){
-
-
-    // simulate network request
-    Future.delayed(Duration(seconds: 2),(){
-      print('yoshi');
-    });
-
-    print('non blocking');
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    getData();
-    print('init function ran just now');
-
-  }
-
   @override
   Widget build(BuildContext context) {
     print('build function ran just now');
